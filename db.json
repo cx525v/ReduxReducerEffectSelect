@@ -1,0 +1,18 @@
+{
+  "customers": [
+    {
+      "id": 2,
+      "name": "Mary Johnson",
+      "phone": "1111",
+      "address": "1111",
+      "membership": "pro"
+    },
+    {
+      "id": 3,
+      "name": "34 Johnson",
+      "phone": "rewr",
+      "address": "erwrwer",
+      "membership": "basic"
+    }
+  ]
+}
