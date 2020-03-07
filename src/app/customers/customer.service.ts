@@ -25,12 +25,17 @@ export class CustomerService {
     }
 
     createCustomer(customer: Customer): Observable<Customer> {
-        return this.http.post<Customer>(this.url, {customer}, headerOptions);
+        const cust: Customer = {
+          name: customer.name,
+          phone: customer.phone,
+          address: customer.address,
+          membership: customer.membership
+        };
+        return this.http.post<Customer>(this.url, cust, headerOptions);
     }
 
     updateCustomer(customer: Customer): Observable<Customer> {
-        const cust = {
-         id: customer.id,
+        const cust = {     
          name: customer.name,
          phone: customer.phone,
          address: customer.address,
